@@ -1,38 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@1,100&family=Smooch&display=swap');
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
 .App {
+  background-color: #EDEDE9;
   text-align: center;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.introduction {
+  background-color: #EDEDE9;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-family: 'Alfa Slab One', cursive;
+  letter-spacing: 0.4rem;
+  font-size: 7rem;
+  font-weight: bold;
+  color: #1B140E;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description {
+  font-family: 'Smooch', cursive;
+  letter-spacing: 0.3rem;
+  font-size: 3rem;
+  color: #22221C;
 }
+
+.button{
+  position:relative;
+  display:inline-block;
+}
+
+.button a{
+  color: #F5EBE0;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color: #9D856C;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #433223;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #433223;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #433223;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active{
+  top:10px;
+  background-color:#625241;
+  
+  -webkit-box-shadow:inset 0 1px 0 #625241, inset 0 -3px 0 #281E15;
+  -moz-box-shadow:inset 0 1px 0 #625241, inset 0 -3pxpx 0 #281E15;
+  box-shadow:inset 0 1px 0 #625241, inset 0 -3px 0 #281E15;
+}
+
+.button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
