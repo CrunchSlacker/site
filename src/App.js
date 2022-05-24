@@ -1,13 +1,21 @@
-import Home from './pages/home.jsx';
-import Navbar from './basics/navbar.jsx';
+import { Link } from 'react-router-dom';
 
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <h3>Add info about the site and shit</h3>
+      <div className="introduction">
+        <div>
+          <h1 className="title">Glizzy</h1>
+          <h3 className="description">Bigger than Black and White</h3>
+        </div>
+        <div ontouchstart="">
+          <div className="button">
+            <Link to="/allSubjects">View Subjects</Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
