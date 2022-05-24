@@ -1,19 +1,19 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Home from '../pages/home';
+import { Link } from 'react-router-dom';
+import './navbar.css';
 
 export default function Navbar() {
   return (
-    <nav>
-        <button>Home</button>
-        <button>About</button>
-        <button>Calculus</button>
-        <button>Physics</button>
-        <button>CSA</button>
+    <nav className='navbar'>
+        <Link to="/"><button>Home</button></Link>
+        <Link to="/about"><button>About</button></Link>
+        <Link to="/calculus"><button>Calculus</button></Link>
+        <Link to="/physics"><button>Physics</button></Link>
+        {/* <button>CSA</button>
         <button>World History</button>
         <button>US History</button>
-        <button>Government</button>
-        <button>Contact</button>
+        <button>Government</button> */}
+        <Link to="/contact"><button>Contact</button></Link>
     </nav>
   );
 }

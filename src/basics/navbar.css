@@ -1,0 +1,15 @@
+.navbar button {
+    background-color: #F5EBE0;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #D6CCC2;
+    font-family: Arial, Helvetica, sans-serif;
+}
