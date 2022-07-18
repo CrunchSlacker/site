@@ -1,22 +1,19 @@
-import { Link } from 'react-router-dom';
+import fullLogo from "./Logo-PNGs/peerlogotransparent.png";
+import Navbar from "./basics/navbar.jsx";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <div className="introduction">
+    <>
+      <Navbar />
+      <div className="App">
         <div>
-          <h1 className="title">Glizzy</h1>
-          <h3 className="description">Bigger than Black and White</h3>
-        </div>
-        <div ontouchstart="">
-          <div className="button">
-            <Link to="/allSubjects">View Subjects</Link>
-          </div>
+          <img alt="full Logo" src={fullLogo} className="fullLogo" />
+          <h3 className="description">Peer to Peer Knowledge</h3>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
