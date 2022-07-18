@@ -1,19 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './navbar.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../Logo-PNGs/txtandlogodifflogogradyparentback.png";
 
-export default function Navbar() {
+function Navbar() {
   return (
-    <nav className='navbar'>
-        <Link to="/"><button>Home</button></Link>
-        <Link to="/about"><button>About</button></Link>
-        <Link to="/calculus"><button>Calculus</button></Link>
-        <Link to="/physics"><button>Physics</button></Link>
-        {/* <button>CSA</button>
-        <button>World History</button>
-        <button>US History</button>
-        <button>Government</button> */}
-        <Link to="/contact"><button>Contact</button></Link>
-    </nav>
+    <div class="sidenav">
+      <img alt="logo" src={logo} onClick={() => window.location.href="/"} className="smallLogo"/>
+      <Link to="/allSubjects">Learning</Link>
+      <a href="#courses">Courses</a>
+      <a href="#shced">Scheduling</a>
+      <a href="#clients">Profile</a>
+      <a href="#login" id="login">Sign In</a>
+    </div>
   );
 }
+
+export default Navbar;
