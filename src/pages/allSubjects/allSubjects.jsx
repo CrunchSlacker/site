@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../basics/navbar.jsx";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function AllSubjects() {
   return (
