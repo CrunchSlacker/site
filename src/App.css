@@ -3,7 +3,7 @@
 html, body {
   margin: 0;
   height: 100%;
-  background-color: #FFFFF6;
+  background-color: #EADB1E;
 }
 
 #root {
@@ -15,6 +15,7 @@ html, body {
   height: 100%;
   margin-left: 160px;
   display:flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -36,19 +37,19 @@ html, body {
 .description {
   font-family: 'Source Sans Pro', sans-serif; 
   letter-spacing: 0.05rem;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 2rem;
   margin:0;
   color: #22221C;
 }
 
 #navMove {
-  margin-left: 200px;
+  margin-left: 160px;
 }
 
 .fullLogo {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 75%;
+  max-height: 75%;
 }
 
 .smallLogo {

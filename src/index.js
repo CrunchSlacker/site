@@ -4,8 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 
-import About from "./pages/about/about";
-import Contact from "./pages/contact/contact";
+import Schedule from "./pages/schedule/schedule";
 import Calculus from "./pages/calculus/calculus";
 import Physics from "./pages/physics/physics";
 import AllSubjects from "./pages/allSubjects/allSubjects";
@@ -19,10 +18,9 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/allSubjects" element={<AllSubjects />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
       <Route path="/calculus" element={<Calculus />} />
       <Route path="/physics" element={<Physics />} />
+      <Route path="/schedule" element={<Schedule />} />
       <Route path="/calculus/units/1" element={<CALC_UNIT_1_1 />} />
       <Route path="/calculus/units/3" element={<CALC_UNIT_3/>} />
       <Route path="/calculus/units/4" element={<CALC_UNIT_4/>} />

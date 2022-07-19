@@ -8,7 +8,7 @@ function Navbar() {
       <img alt="logo" src={logo} onClick={() => window.location.href="/"} className="smallLogo"/>
       <Link to="/allSubjects">Learning</Link>
       <a href="#courses">Courses</a>
-      <a href="#shced">Scheduling</a>
+      <Link to="/schedule">Schedule</Link>
       <a href="#clients">Profile</a>
       <a href="#login" id="login">Sign In</a>
     </div>
