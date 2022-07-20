@@ -13,7 +13,7 @@ export default function AllSubjects() {
           <h2 className="small-title" onClick={() => window.location.href="/calculus"}>Mathematics</h2>
 
           <ul style={{listStyle: "none", padding: 0}}>
-            <li><div onClick={() => window.location.href="/calculus/units/1"}>Unit 1</div></li>
+            <li><Link to="/calculus/units/1">Unit One</Link></li>
             <li><div onClick={() => window.location.href="/calculus/units/2"}>Unit 2</div></li>
             <li><div onClick={() => window.location.href="/calculus/units/3"}>Unit 3</div></li>
           </ul>

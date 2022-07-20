@@ -4,7 +4,7 @@ import React from "react";
 import chadRoblox from "../src/fllasdk1g0p01.png";
 import "./App.css";
 
-let width = window.innerWidth - 176;
+let width = window.innerWidth - 179;
 let height = window.innerHeight + 100;
 
 function App() {
